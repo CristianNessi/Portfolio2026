@@ -3,7 +3,7 @@
 Portafolio profesional desarrollado con **Next.js, Tailwind CSS y Framer Motion**, enfocado en mostrar mis proyectos, habilidades y experiencia como desarrollador Full Stack.
 
 ## 🌐 Demo en vivo
-👉 https://yes-pf2jjwg4j-cristiannessis-projects.vercel.app/
+👉 https://yes-cristiannessi-cristiannessis-projects.vercel.app?_vercel_share=cuBamjaEIlAJPAfJaQM3UsUdegDsAPZJ
 
 ---
 
@@ -44,7 +44,7 @@ Soy desarrollador Full Stack especializado en crear productos digitales modernos
 ## 📦 Instalación local
 
 ```bash
-git clone https://github.com/CristianNessi/Portfolio.git
+git clone https://github.com/CristianNessi/Portfolio2026.git
 cd portfolio
 npm install
 npm run dev
