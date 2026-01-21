@@ -37,7 +37,7 @@ export default function Page() {
           {/* TEXTO */}
           <div className="text-center md:text-left">
             <span className="text-indigo-400 font-semibold tracking-wide uppercase">
-              Portafolio Profesional
+              Portafolio
             </span>
 
             <h1 className="text-6xl md:text-7xl xl:text-8xl font-extrabold leading-tight mt-4 mb-6">
