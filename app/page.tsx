@@ -63,7 +63,7 @@ export default function Page() {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-indigo-500/30 blur-2xl" />
               <img
-                src="/profile.jpg"
+                src="/profile1.jpeg"
                 alt="Cristian Nessi"
                 className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border border-gray-700 shadow-2xl"
               />
