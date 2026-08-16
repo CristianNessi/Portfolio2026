@@ -61,9 +61,35 @@ export default function Page() {
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center">
-            <div className="relative w-72 h-72 md:w-80 md:h-80">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10" />
-              <img src="/profile1.jpeg" alt="Cristian Nessi" className="w-full h-full rounded-3xl object-cover object-top" />
+            <div className="relative flex flex-col items-center gap-2 select-none">
+
+              {/* Llave apertura */}
+              <div className="flex items-center gap-3 self-start">
+                <span className="text-indigo-400/60 font-mono text-5xl font-thin leading-none">{`{`}</span>
+                <span className="text-white/10 font-mono text-xs tracking-widest">developer</span>
+              </div>
+
+              {/* Imagen */}
+              <div className="relative w-64 h-64 md:w-72 md:h-72 mx-6">
+                <div className="absolute -inset-[3px] rounded-2xl bg-gradient-to-br from-indigo-500/30 via-transparent to-purple-500/20" />
+                <img
+                  src="/profile1.jpeg"
+                  alt="Cristian Nessi"
+                  className="relative w-full h-full rounded-2xl object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+                />
+                {/* Linea decorativa izquierda */}
+                <div className="absolute -left-3 top-4 bottom-4 w-[2px] bg-gradient-to-b from-transparent via-indigo-500/40 to-transparent" />
+                {/* Dot top-left */}
+                <div className="absolute -top-1 -left-1 w-2 h-2 rounded-full bg-indigo-500/50" />
+                <div className="absolute -bottom-1 -left-1 w-2 h-2 rounded-full bg-purple-500/50" />
+              </div>
+
+              {/* Llave cierre */}
+              <div className="flex items-center gap-3 self-end">
+                <span className="text-white/10 font-mono text-xs tracking-widest">profile</span>
+                <span className="text-indigo-400/60 font-mono text-5xl font-thin leading-none">{`}`}</span>
+              </div>
+
             </div>
           </motion.div>
         </div>
