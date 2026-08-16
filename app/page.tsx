@@ -148,6 +148,7 @@ export default function Page() {
 
           <div className="grid md:grid-cols-2 gap-10">
             {[
+              { name: "HeyDenim", url: "https://heydenim.es/", desc: "Tienda eCommerce de moda." },
               { name: "MG TECH", url: "https://cristiannessi.github.io/MG-Tech/", desc: "Landing de marketing." },
               { name: "La Fija", url: "https://www.lafija.com/", desc: "Casino online." },
               { name: "Web Profesional", url: "https://www.domenicoschiattarella.com/", desc: "Landing personal." },
