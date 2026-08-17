@@ -77,28 +77,73 @@ export default function Page() {
             </div>
           </motion.div>
 
-          {/* IMAGEN CON LLAVES */}
+          {/* IMAGEN CON LLAVES ESTILO DEV */}
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center">
-            <div className="relative flex flex-col items-center gap-2 select-none">
-              <div className="flex items-center gap-3 self-start">
-                <span className="text-cyan-400/70 font-mono text-5xl font-thin leading-none">{`{`}</span>
-                <span className="text-slate-600 font-mono text-xs tracking-widest">developer</span>
+            <div className="relative select-none" style={{ width: "340px", height: "420px" }}>
+
+              {/* Codigo de fondo */}
+              <div className="absolute inset-0 rounded-3xl overflow-hidden bg-[#0d1117]">
+                <pre className="text-[9px] leading-4 text-emerald-500/20 font-mono p-4 absolute inset-0 overflow-hidden pointer-events-none">{`// Developer Mode: ON
+const developer = {
+  name: "Cristian Nessi",
+  role: "Full Stack Developer",
+  skills: ["React","Node","Python"],
+  focus: "Build. Ship. Repeat.",
+};
+
+function createFuture() {
+  while (coffee > 0) {
+    code();
+    learn();
+    build();
+  }
+  return success;
+}
+
+$ whoami
+> developer
+
+$ skills --list
+• JavaScript  • TypeScript
+• React       • Node.js
+• Python      • SQL
+• Docker      • Git
+
+$ status
+Building... [======] 100%
+Success ✓`}</pre>
               </div>
-              <div className="relative w-64 h-64 md:w-72 md:h-72 mx-6">
-                <div className="absolute -inset-[2px] rounded-2xl bg-gradient-to-br from-cyan-500/40 via-transparent to-violet-500/30" />
+
+              {/* Llave izquierda */}
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 z-20 flex flex-col items-center" style={{ height: "320px" }}>
+                <svg viewBox="0 0 40 200" className="h-full w-10 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 5 Q10 5 10 25 L10 85 Q10 100 0 100 Q10 100 10 115 L10 175 Q10 195 30 195" stroke="#22d3ee" strokeWidth="3" strokeLinecap="round" fill="none"/>
+                </svg>
+              </div>
+
+              {/* Llave derecha */}
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 z-20 flex flex-col items-center" style={{ height: "320px" }}>
+                <svg viewBox="0 0 40 200" className="h-full w-10 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 5 Q30 5 30 25 L30 85 Q30 100 40 100 Q30 100 30 115 L30 175 Q30 195 10 195" stroke="#22d3ee" strokeWidth="3" strokeLinecap="round" fill="none"/>
+                </svg>
+              </div>
+
+              {/* Foto */}
+              <div className="absolute inset-x-10 inset-y-8 z-10 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 30px rgba(34,211,238,0.15)" }}>
                 <img
                   src="/profile1.jpeg"
                   alt="Cristian Nessi"
-                  className="relative w-full h-full rounded-2xl object-cover object-top"
+                  className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute -left-3 top-4 bottom-4 w-[2px] bg-gradient-to-b from-transparent via-cyan-400/40 to-transparent" />
-                <div className="absolute -top-1 -left-1 w-2 h-2 rounded-full bg-cyan-400/60" />
-                <div className="absolute -bottom-1 -left-1 w-2 h-2 rounded-full bg-violet-400/60" />
+                {/* overlay sutil */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117]/60 via-transparent to-transparent" />
               </div>
-              <div className="flex items-center gap-3 self-end">
-                <span className="text-slate-600 font-mono text-xs tracking-widest">profile</span>
-                <span className="text-violet-400/70 font-mono text-5xl font-thin leading-none">{`}`}</span>
+
+              {/* Tag inferior */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 font-mono text-xs text-emerald-400/80 bg-[#0d1117]/80 px-3 py-1 rounded-full border border-emerald-500/20 whitespace-nowrap">
+                $ git commit -m "New version of me"
               </div>
+
             </div>
           </motion.div>
         </div>
