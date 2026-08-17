@@ -77,72 +77,45 @@ export default function Page() {
             </div>
           </motion.div>
 
-          {/* IMAGEN CON LLAVES ESTILO DEV */}
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center">
-            <div className="relative select-none" style={{ width: "340px", height: "420px" }}>
+          {/* IMAGEN CON LLAVES */}
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center items-center">
+            <div className="relative flex items-center gap-3">
 
-              {/* Codigo de fondo */}
-              <div className="absolute inset-0 rounded-3xl overflow-hidden bg-[#0d1117]">
-                <pre className="text-[9px] leading-4 text-emerald-500/20 font-mono p-4 absolute inset-0 overflow-hidden pointer-events-none">{`// Developer Mode: ON
-const developer = {
-  name: "Cristian Nessi",
-  role: "Full Stack Developer",
-  skills: ["React","Node","Python"],
-  focus: "Build. Ship. Repeat.",
-};
+              {/* Llave izquierda SVG */}
+              <svg viewBox="0 0 50 260" className="w-10 h-64 md:h-80 flex-shrink-0 drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38 6 Q14 6 14 28 L14 108 Q14 130 2 130 Q14 130 14 152 L14 232 Q14 254 38 254" stroke="url(#glL)" strokeWidth="2.5" strokeLinecap="round"/>
+                <defs>
+                  <linearGradient id="glL" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stopColor="#818cf8"/>
+                    <stop offset="50%" stopColor="#22d3ee"/>
+                    <stop offset="100%" stopColor="#818cf8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
 
-function createFuture() {
-  while (coffee > 0) {
-    code();
-    learn();
-    build();
-  }
-  return success;
-}
-
-$ whoami
-> developer
-
-$ skills --list
-• JavaScript  • TypeScript
-• React       • Node.js
-• Python      • SQL
-• Docker      • Git
-
-$ status
-Building... [======] 100%
-Success ✓`}</pre>
-              </div>
-
-              {/* Llave izquierda */}
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 z-20 flex flex-col items-center" style={{ height: "320px" }}>
-                <svg viewBox="0 0 40 200" className="h-full w-10 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M30 5 Q10 5 10 25 L10 85 Q10 100 0 100 Q10 100 10 115 L10 175 Q10 195 30 195" stroke="#22d3ee" strokeWidth="3" strokeLinecap="round" fill="none"/>
-                </svg>
-              </div>
-
-              {/* Llave derecha */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 z-20 flex flex-col items-center" style={{ height: "320px" }}>
-                <svg viewBox="0 0 40 200" className="h-full w-10 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 5 Q30 5 30 25 L30 85 Q30 100 40 100 Q30 100 30 115 L30 175 Q30 195 10 195" stroke="#22d3ee" strokeWidth="3" strokeLinecap="round" fill="none"/>
-                </svg>
-              </div>
-
-              {/* Foto */}
-              <div className="absolute inset-x-10 inset-y-8 z-10 rounded-2xl overflow-hidden" style={{ boxShadow: "0 0 30px rgba(34,211,238,0.15)" }}>
+              {/* Foto sin fondo extra */}
+              <div className="relative w-56 h-64 md:w-64 md:h-80 flex-shrink-0">
+                {/* Glow detrás de la foto */}
+                <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/10 via-violet-500/5 to-cyan-500/10 rounded-2xl blur-xl scale-110" />
                 <img
                   src="/profile1.jpeg"
                   alt="Cristian Nessi"
-                  className="w-full h-full object-cover object-top"
+                  className="relative w-full h-full object-cover object-top rounded-2xl"
+                  style={{ maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)", WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)" }}
                 />
-                {/* overlay sutil */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117]/60 via-transparent to-transparent" />
               </div>
 
-              {/* Tag inferior */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 font-mono text-xs text-emerald-400/80 bg-[#0d1117]/80 px-3 py-1 rounded-full border border-emerald-500/20 whitespace-nowrap">
-                $ git commit -m "New version of me"
-              </div>
+              {/* Llave derecha SVG */}
+              <svg viewBox="0 0 50 260" className="w-10 h-64 md:h-80 flex-shrink-0 drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 6 Q36 6 36 28 L36 108 Q36 130 48 130 Q36 130 36 152 L36 232 Q36 254 12 254" stroke="url(#glR)" strokeWidth="2.5" strokeLinecap="round"/>
+                <defs>
+                  <linearGradient id="glR" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stopColor="#818cf8"/>
+                    <stop offset="50%" stopColor="#22d3ee"/>
+                    <stop offset="100%" stopColor="#818cf8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
 
             </div>
           </motion.div>
