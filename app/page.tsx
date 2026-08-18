@@ -77,46 +77,15 @@ export default function Page() {
             </div>
           </motion.div>
 
-          {/* IMAGEN CON LLAVES */}
+          {/* FOTO */}
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center items-center">
-            <div className="relative flex items-center gap-3">
-
-              {/* Llave izquierda SVG */}
-              <svg viewBox="0 0 50 260" className="w-10 h-64 md:h-80 flex-shrink-0 drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M38 6 Q14 6 14 28 L14 108 Q14 130 2 130 Q14 130 14 152 L14 232 Q14 254 38 254" stroke="url(#glL)" strokeWidth="2.5" strokeLinecap="round"/>
-                <defs>
-                  <linearGradient id="glL" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-                    <stop offset="0%" stopColor="#818cf8"/>
-                    <stop offset="50%" stopColor="#22d3ee"/>
-                    <stop offset="100%" stopColor="#818cf8"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-
-              {/* Foto sin fondo extra */}
-              <div className="relative w-56 h-64 md:w-64 md:h-80 flex-shrink-0">
-                {/* Glow detrás de la foto */}
-                
-                <img
-                  src="/Profile2.png"
-                  alt="Cristian Nessi"
-                  className="relative w-full h-full object-cover object-top"
-                  style={{ maskImage: "linear-gradient(to bottom, black 60%, transparent 95%)", WebkitMaskImage: "linear-gradient(to bottom, black 60%, transparent 95%)" }}
-                />
-              </div>
-
-              {/* Llave derecha SVG */}
-              <svg viewBox="0 0 50 260" className="w-10 h-64 md:h-80 flex-shrink-0 drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 6 Q36 6 36 28 L36 108 Q36 130 48 130 Q36 130 36 152 L36 232 Q36 254 12 254" stroke="url(#glR)" strokeWidth="2.5" strokeLinecap="round"/>
-                <defs>
-                  <linearGradient id="glR" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
-                    <stop offset="0%" stopColor="#818cf8"/>
-                    <stop offset="50%" stopColor="#22d3ee"/>
-                    <stop offset="100%" stopColor="#818cf8"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-
+            <div className="relative w-72 md:w-96">
+              <img
+                src="/Profile2.png"
+                alt="Cristian Nessi"
+                className="w-full h-auto object-contain"
+                style={{ maskImage: "linear-gradient(to bottom, black 55%, transparent 90%)", WebkitMaskImage: "linear-gradient(to bottom, black 55%, transparent 90%)" }}
+              />
             </div>
           </motion.div>
         </div>
