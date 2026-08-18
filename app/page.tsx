@@ -79,12 +79,15 @@ export default function Page() {
 
           {/* FOTO */}
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center items-center">
-            <div className="relative w-72 md:w-96">
+            <div className="relative w-80 md:w-[420px]">
               <img
                 src="/Profile2.png"
                 alt="Cristian Nessi"
                 className="w-full h-auto object-contain"
-                style={{ maskImage: "linear-gradient(to bottom, black 55%, transparent 90%)", WebkitMaskImage: "linear-gradient(to bottom, black 55%, transparent 90%)" }}
+                style={{
+                  maskImage: "radial-gradient(ellipse 80% 85% at 50% 40%, black 40%, transparent 75%)",
+                  WebkitMaskImage: "radial-gradient(ellipse 80% 85% at 50% 40%, black 40%, transparent 75%)",
+                }}
               />
             </div>
           </motion.div>
