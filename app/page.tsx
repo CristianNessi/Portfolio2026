@@ -96,12 +96,12 @@ export default function Page() {
               {/* Foto sin fondo extra */}
               <div className="relative w-56 h-64 md:w-64 md:h-80 flex-shrink-0">
                 {/* Glow detrás de la foto */}
-                <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/10 via-violet-500/5 to-cyan-500/10 rounded-2xl blur-xl scale-110" />
+                
                 <img
-                  src="/profile1.jpeg"
+                  src="/Profile2.png"
                   alt="Cristian Nessi"
-                  className="relative w-full h-full object-cover object-top rounded-2xl"
-                  style={{ maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)", WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)" }}
+                  className="relative w-full h-full object-cover object-top"
+                  style={{ maskImage: "linear-gradient(to bottom, black 60%, transparent 95%)", WebkitMaskImage: "linear-gradient(to bottom, black 60%, transparent 95%)" }}
                 />
               </div>
 
