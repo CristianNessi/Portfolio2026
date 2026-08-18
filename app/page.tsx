@@ -78,18 +78,23 @@ export default function Page() {
           </motion.div>
 
           {/* FOTO */}
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center items-center">
-            <div className="relative w-80 md:w-[420px]">
-              <img
-                src="/Profile2.png"
-                alt="Cristian Nessi"
-                className="w-full h-auto object-contain"
-                style={{
-                  maskImage: "radial-gradient(ellipse 80% 85% at 50% 40%, black 40%, transparent 75%)",
-                  WebkitMaskImage: "radial-gradient(ellipse 80% 85% at 50% 40%, black 40%, transparent 75%)",
-                }}
-              />
-            </div>
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.1 }} className="flex justify-center items-end relative">
+
+            {/* Glow cyan detrás */}
+            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-cyan-500/10 blur-3xl pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-violet-500/10 blur-2xl pointer-events-none" />
+
+            <img
+              src="/Profile2.png"
+              alt="Cristian Nessi"
+              className="relative w-80 md:w-[460px] h-auto object-contain"
+              style={{
+                maskImage: "radial-gradient(ellipse 70% 80% at 50% 35%, black 20%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.3) 65%, transparent 80%)",
+                WebkitMaskImage: "radial-gradient(ellipse 70% 80% at 50% 35%, black 20%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.3) 65%, transparent 80%)",
+                filter: "brightness(0.95) contrast(1.05)",
+              }}
+            />
+
           </motion.div>
         </div>
       </section>
