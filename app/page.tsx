@@ -162,12 +162,13 @@ export default function Page() {
             </div>
 
             <img
-              src="/Profile2.png"
+              src="/profile3.png"
               alt="Cristian Nessi"
               className="relative w-full max-w-[360px] h-auto object-contain object-bottom"
               style={{
                 maskImage: "radial-gradient(ellipse 78% 85% at 50% 42%, black 30%, rgba(0,0,0,0.7) 52%, rgba(0,0,0,0.2) 70%, transparent 84%)",
                 WebkitMaskImage: "radial-gradient(ellipse 78% 85% at 50% 42%, black 30%, rgba(0,0,0,0.7) 52%, rgba(0,0,0,0.2) 70%, transparent 84%)",
+                filter: "brightness(0.82)",
               }}
             />
           </motion.div>
