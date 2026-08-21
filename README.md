@@ -1,53 +1,24 @@
-# 🚀 Portfolio - Cristian Nessi
+# Cristian Nessi — Portfolio
 
-Portafolio profesional desarrollado con **Next.js, Tailwind CSS y Framer Motion**, enfocado en mostrar mis proyectos, habilidades y experiencia como desarrollador Full Stack.
+Portafolio profesional desarrollado con **Next.js 16, Tailwind CSS y Framer Motion**.
 
-## 🌐 Demo en vivo
-👉 https://yes-cristiannessi-cristiannessis-projects.vercel.app?_vercel_share=cuBamjaEIlAJPAfJaQM3UsUdegDsAPZJ
+## 🌐 Live
 
----
+👉 [portfolio-git-main-cristiannessis-projects.vercel.app](https://portfolio-git-main-cristiannessis-projects.vercel.app/)
 
-## 🧠 Sobre mí
+## Stack
 
-Soy desarrollador Full Stack especializado en crear productos digitales modernos, escalables y con excelente experiencia de usuario. Me enfoco en transformar ideas en soluciones reales orientadas a resultados.
-
----
-
-## 🛠️ Tecnologías utilizadas
-
-- Next.js 14 (App Router)
-- React
+- Next.js 16 (App Router)
 - TypeScript
 - Tailwind CSS
 - Framer Motion
-- Vercel (deploy)
+- Vercel
 
----
-
-## ✨ Features
-
-- Diseño moderno tipo SaaS
-- Animaciones suaves con Framer Motion
-- SEO básico optimizado
-- Dark mode
-- Descarga de CV
-- Botón flotante de WhatsApp
-- Secciones:
-  - Hero
-  - Proyectos
-  - Sitios publicados
-  - Sobre mí
-  - Footer profesional
-
----
-
-## 📦 Instalación local
+## Instalación local
 
 ```bash
 git clone https://github.com/CristianNessi/Portfolio2026.git
-cd portfolio
+cd Portfolio2026
 npm install
 npm run dev
-
-# Portfolio26
-
+```
